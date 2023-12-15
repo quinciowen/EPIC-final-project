@@ -26,12 +26,12 @@ if m == 'song4.mp3':
     i = 224
 
 while True:
-    if GPIO.input(5) == GPIO.HIGH: #starts the song when the tough sensor is pushed
+    if GPIO.input(5) == GPIO.HIGH: #starts the song when the touch sensor is pushed
         pygame.init()
         pygame.mixer.init()
         pygame.mixer.music.load(m)
         pygame.mixer.music.play()
-        time.sleep(i) # i is the number of seconds the song is efore it turns off
+        time.sleep(i) # i is the number of seconds the song is before it turns off
         print('song is over')
         exit() # exits out of pygame
 
